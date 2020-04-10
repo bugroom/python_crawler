@@ -1,12 +1,12 @@
 from selenium import webdriver
 from tkinter import *
-
 from PIL import ImageTk, Image
 
 def OpenHtml(url):
     driver = webdriver.Firefox()
     url = 'http://jx.598110.com/?url={0}'.format(url)
     driver.get(url)
+
 def GUI():
     top = Tk()
     canvas = Canvas(top, width=533, height=300, bd=0, highlightthickness=0)
